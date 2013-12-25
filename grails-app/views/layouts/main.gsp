@@ -1,28 +1,41 @@
+<%-- DO NOT MODIFY THIS FILE, IT IS AUTOMATICALLY GENERATED. INSTEAD MODIFY main.haml --%>
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><g:layoutTitle default="Grails"/></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">
-		<link rel="apple-touch-icon" href="${resource(dir: 'images', file: 'apple-touch-icon.png')}">
-		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
-		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
-		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
-		<g:layoutHead/>
-		<g:javascript library="application"/>		
-		<r:layoutResources />
-	</head>
-	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
-		<g:layoutBody/>
-		<div class="footer" role="contentinfo"></div>
-		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
-		<r:layoutResources />
-	</body>
+<html>
+  <head>
+    <title>
+      <g:layoutTitle default='&#1056;&#1077;&#1082;&#1088;&#1091;&#1090;&#1077;&#1088;&#1099; &#1088;&#1091;&#1083;&#1103;&#1090;'></g:layoutTitle>
+    </title>
+    <meta http-equiv='Content-Type" :content =&gt; "text/html; charset=UTF-8' />
+    <g:javascript src='lib/bootstrap.js'></g:javascript>
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/lib', file: 'bootstrap.min.css')}" />
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'advanced-lists.css')}" />
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'table.css')}" />
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/lib', file: 'bootstrap-theme.min.css')}" />
+    
+    <g:layoutHead />
+    <r:layoutResources />
+  </head>
+  <body>
+    <div class='navbar navbar-inverse' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='#'>Имя проекта</a>
+        </div>
+        <div class='navbar-collapse collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li>
+              <a href='/recruiter-vacancies-list'>Мои Вакансии</a>
+            </li>
+            <li>
+              <a href='/recruiter-available-vacancies'>Поиск вакансии</a>
+            </li>
+            <li>
+              <a href='/j_spring_security_logout'>Выйти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <g:layoutBody />
+  </body>
 </html>

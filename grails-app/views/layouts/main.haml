@@ -1,0 +1,29 @@
+!!! 5
+%html
+  %head
+    %title
+      %g:layoutTitle(default="Рекрутеры рулят")
+    %meta{:http-equiv => "Content-Type" :content => "text/html; charset=UTF-8"}
+    %g:javascript{:src => "lib/bootstrap.js"}
+
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/lib', file: 'bootstrap.min.css')}" />
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'advanced-lists.css')}" />
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'table.css')}" />
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/lib', file: 'bootstrap-theme.min.css')}" />
+
+    %g:layoutHead/
+    %r:layoutResources/
+  %body
+    .navbar.navbar-inverse(role="navigation")
+      .container
+        .navbar-header
+          %a.navbar-brand{:href => "#"} Имя проекта
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{:href => "/recruiter-vacancies-list"} Мои Вакансии
+            %li
+              %a{:href => "/recruiter-available-vacancies"} Поиск вакансии
+            %li
+              %a{:href => "/j_spring_security_logout"} Выйти
+    %g:layoutBody/
