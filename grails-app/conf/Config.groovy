@@ -115,3 +115,11 @@ log4j = {
 }
 
 grails.sitemesh.default.layout = 'main'
+
+"coffeescript-compiler" {
+
+    appSource {
+        coffeeSourcePath = "src/coffee"
+        jsOutputPath = "web-app/js/"
+    }
+}
