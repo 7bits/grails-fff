@@ -22,6 +22,11 @@ class UrlMappings {
             action = 'index'
         }
 
+        name showDeal: "/deals/$id" {
+            controller = 'deal'
+            action = 'show'
+        }
+
         "/$controller/$action?/$id?(.${format})?"{
             constraints {
                 // apply constraints here

@@ -23,9 +23,9 @@
         <div class='navbar-collapse collapse'>
           <ul class='nav navbar-nav navbar-right'>
             <li>
-              <a href='#'>
+              <g:link mapping='recruiterDeals'>
                 <g:message code='recruiter.menu.deals'></g:message>
-              </a>
+              </g:link>
             </li>
             <li>
               <a href='#'>

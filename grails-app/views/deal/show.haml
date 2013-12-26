@@ -1,0 +1,52 @@
+.container
+  %h1 Вакансия, по которой идёт работа
+  .row
+    .col-md-8
+      %h2
+      %dl.dl-horizontal
+        %dt Наименование
+        %dd Программист
+        %dt Описание
+        %dd PHP guru
+        %dt Диапазон з/п
+        %dd 10 - 20
+        %dt Дата создания
+        %dd 10.12.2013
+        %dt Дата окончания
+        %dd 09.09.2014
+    .col-md-4
+      %h2 Работодатель
+      %p Иванов Василий Палыч
+  %h2 Список кандидатов
+  .row
+    .col-md-6
+      %table.table.table-striped
+        %thead
+          %tr
+            %th Имя
+            %th Фамилия
+            %th Статус
+            %th Дата создания
+            %th Действие
+        %tbody
+          %tr
+            %td Иван
+            %td Иванов
+            %td In progress
+            %td 09.09.2014
+            %td
+              %a.btn.btn-link.pull-right(href="#") Изменить
+          %tr
+            %td Константин
+            %td Константинопольский
+            %td In progress
+            %td 09.09.2014
+            %td
+          %tr
+            %td Пётр
+            %td Петров
+            %td In progress
+            %td 09.09.2014
+            %td
+              %a.btn.btn-link.pull-right(href="#") Изменить
+      %a.btn.btn-success(href="#") Предложить нового кандидата

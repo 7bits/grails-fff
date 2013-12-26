@@ -28,9 +28,20 @@
         <td>In progress</td>
         <td>12.10.2013</td>
         <td>
-          <a class='btn btn-link' href='#'>
+          <g:link class='btn btn-link' mapping='showDeal' params="[id: '1']">
             <g:message code='recruiter.dealList.more'></g:message>
-          </a>
+          </g:link>
+        </td>
+      </tr>
+      <tr>
+        <td>Лесоруб</td>
+        <td>Уметь клёво рубить сосны</td>
+        <td>In progress</td>
+        <td>12.12.2013</td>
+        <td>
+          <g:link class='btn btn-link' mapping='showDeal' params="[id: '1']">
+            <g:message code='recruiter.dealList.more'></g:message>
+          </g:link>
         </td>
       </tr>
     </tbody>
