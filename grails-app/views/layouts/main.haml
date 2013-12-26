@@ -3,25 +3,25 @@
   %head
     %title
       %g:layoutTitle(default="Рекрутеры рулят")
-    %meta{:http-equiv => "Content-Type" :content => "text/html; charset=UTF-8"}
-    %script{:src => "http://code.jquery.com/jquery-2.0.3.js"}
+    %meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    %script(src="http://code.jquery.com/jquery-2.0.3.js")
     %r:require( module="css" )
-    %g:javascript{:src => "lib/bootstrap.js"}
-    %g:javascript{:src => "lib/bootstrap-confirmation.js"}
-    %g:javascript{:src => "confirmation.js"}
+    %g:javascript(src="lib/bootstrap.js")
+    %g:javascript(src="lib/bootstrap-confirmation.js")
+    %g:javascript(src="confirmation.js")
     %g:layoutHead/
     %r:layoutResources/
   %body
     .navbar.navbar-inverse(role="navigation")
       .container
         .navbar-header
-          %a.navbar-brand{:href => "#"} Имя проекта
+          %a.navbar-brand(href="#") Имя проекта
         .navbar-collapse.collapse
           %ul.nav.navbar-nav.navbar-right
             %li
-              %a{:href => "/recruiter-vacancies-list"} Мои Вакансии
+              %a(href="/recruiter-vacancies-list") Мои Вакансии
             %li
-              %a{:href => "/recruiter-available-vacancies"} Поиск вакансии
+              %a(href="/recruiter-available-vacancies") Поиск вакансии
             %li
-              %a{:href => "/j_spring_security_logout"} Выйти
+              %a(href="/j_spring_security_logout") Выйти
     %g:layoutBody/

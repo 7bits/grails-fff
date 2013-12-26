@@ -5,7 +5,7 @@
     <title>
       <g:layoutTitle default='&#1056;&#1077;&#1082;&#1088;&#1091;&#1090;&#1077;&#1088;&#1099; &#1088;&#1091;&#1083;&#1103;&#1090;'></g:layoutTitle>
     </title>
-    <meta http-equiv='Content-Type" :content =&gt; "text/html; charset=UTF-8' />
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
     <script src='http://code.jquery.com/jquery-2.0.3.js'></script>
     <r:require module='css'></r:require>
     <g:javascript src='lib/bootstrap.js'></g:javascript>
