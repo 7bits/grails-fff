@@ -29,7 +29,7 @@
               <a href='/recruiter-available-vacancies'>Поиск вакансии</a>
             </li>
             <li>
-              <a href='/j_spring_security_logout'>Выйти</a>
+              <g:link mapping='logout'>Выйти</g:link>
             </li>
           </ul>
         </div>
