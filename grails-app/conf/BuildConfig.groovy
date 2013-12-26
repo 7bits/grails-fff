@@ -60,6 +60,7 @@ grails.project.dependency.resolution = {
         compile ':cache:1.1.1'
         compile ':haml:0.3'
         compile ":coffeescript-compiler:0.9.4"
+        compile ":compass-sass:0.7"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.6" // or ":hibernate4:4.1.11.6"

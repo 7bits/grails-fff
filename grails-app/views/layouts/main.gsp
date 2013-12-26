@@ -7,19 +7,14 @@
     </title>
     <meta http-equiv='Content-Type" :content =&gt; "text/html; charset=UTF-8' />
     <script src='http://code.jquery.com/jquery-2.0.3.js'></script>
+    <r:require module='css'></r:require>
     <g:javascript src='lib/bootstrap.js'></g:javascript>
     <g:javascript src='lib/bootstrap-confirmation.js'></g:javascript>
     <g:javascript src='confirmation.js'></g:javascript>
-    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/lib', file: 'bootstrap.min.css')}" />
-    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'advanced-lists.css')}" />
-    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'table.css')}" />
-    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/lib', file: 'bootstrap-theme.min.css')}" />
-    
     <g:layoutHead />
     <r:layoutResources />
   </head>
   <body>
-    <div></div>
     <div class='navbar navbar-inverse' role='navigation'>
       <div class='container'>
         <div class='navbar-header'>
