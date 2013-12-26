@@ -11,13 +11,27 @@ class UrlMappings {
             controller = 'logout'
             action = 'index'
         }
+
+        name recruiterDeals: "/deals" {
+            controller = 'deal'
+            action = 'index'
+        }
+
+        name employerVacancies: "/vacancies" {
+            controller = 'vacancy'
+            action = 'index'
+        }
+
         "/$controller/$action?/$id?(.${format})?"{
             constraints {
                 // apply constraints here
             }
         }
 
-        "/"(view:"/index")
+        name root: "/" {
+            controller = 'dashboard'
+            action = 'index'
+        }
         "500"(view:'/error')
 	}
 }

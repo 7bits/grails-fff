@@ -8,6 +8,8 @@
     %g:javascript(src="lib/bootstrap.js")
   %body
     .container
+      %g:if(test='${flash.message}')
+        .login_message ${flash.message}
       %form.form-signin(role="form" action="${postUrl}" method="POST")
         %h2.firm-signin-heading Вход
         %input.form-control( name='j_username' placeholder="Email" required="" autofocus="")

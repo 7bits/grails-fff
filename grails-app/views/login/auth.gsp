@@ -10,6 +10,9 @@
   </head>
   <body>
     <div class='container'>
+      <g:if test='${flash.message}'>
+        <div class='login_message'>${flash.message}</div>
+      </g:if>
       <form action='${postUrl}' class='form-signin' method='POST' role='form'>
         <h2 class='firm-signin-heading'>Вход</h2>
         <input autofocus='' class='form-control' name='j_username' placeholder='Email' required='' />
