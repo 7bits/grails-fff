@@ -1,6 +1,12 @@
 class UrlMappings {
 
 	static mappings = {
+
+        name login: "/login" {
+            controller = 'login'
+            action = 'auth'
+        }
+
         name logout: "/logout" {
             controller = 'logout'
             action = 'index'

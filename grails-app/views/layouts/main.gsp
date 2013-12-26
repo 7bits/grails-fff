@@ -23,13 +23,24 @@
         <div class='navbar-collapse collapse'>
           <ul class='nav navbar-nav navbar-right'>
             <li>
-              <a href='/recruiter-vacancies-list'>Мои Вакансии</a>
+              <a href='#'>
+                <g:message code='recruiter.menu.deals'></g:message>
+              </a>
             </li>
             <li>
-              <a href='/recruiter-available-vacancies'>Поиск вакансии</a>
+              <a href='#'>
+                <g:message code='recruiter.menu.bids'></g:message>
+              </a>
             </li>
             <li>
-              <g:link mapping='logout'>Выйти</g:link>
+              <a href='#'>
+                <g:message code='recruiter.menu.vacancySearch'></g:message>
+              </a>
+            </li>
+            <li>
+              <g:link mapping='logout'>
+                <g:message code='recruiter.menu.logout'></g:message>
+              </g:link>
             </li>
           </ul>
         </div>

@@ -19,9 +19,15 @@
         .navbar-collapse.collapse
           %ul.nav.navbar-nav.navbar-right
             %li
-              %a(href="/recruiter-vacancies-list") Мои Вакансии
+              %a(href="#")
+                %g:message(code="recruiter.menu.deals")
             %li
-              %a(href="/recruiter-available-vacancies") Поиск вакансии
+              %a(href="#")
+                %g:message(code="recruiter.menu.bids")
             %li
-              %g:link(mapping='logout') Выйти
+              %a(href="#")
+                %g:message(code="recruiter.menu.vacancySearch")
+            %li
+              %g:link(mapping='logout')
+                %g:message(code="recruiter.menu.logout")
     %g:layoutBody/

@@ -1,8 +1,8 @@
-package com.recruiters
+package com.recruiters.recruiter
 
 import grails.plugin.springsecurity.annotation.Secured
 
-class VacancyController {
+class DealController {
 
     @Secured(['ROLE_RECRUITER'])
     def index() {

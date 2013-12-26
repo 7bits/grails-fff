@@ -1,0 +1,24 @@
+.container
+  %h1
+    %g:message(code="recruiter.menu.deals")
+  %table.table.table-striped
+    %thead
+      %tr
+        %th
+          %g:message(code="recruiter.dealList.vacancyName")
+        %th
+          %g:message(code="recruiter.dealList.vacancyDescription")
+        %th
+          %g:message(code="recruiter.dealList.dealStatus")
+        %th
+          %g:message(code="recruiter.dealList.vacancyCreatedAt")
+        %th
+    %tbody
+      %tr
+        %td Программист
+        %td PHP guru
+        %td In progress
+        %td 12.10.2013
+        %td
+          %a.btn.btn-link(href="#")
+            %g:message(code="recruiter.dealList.more")
