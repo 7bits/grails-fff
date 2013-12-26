@@ -1,0 +1,17 @@
+!!! 5
+%html
+  %head
+    %title Рекрутеры | Логин
+    %meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    %meta(name="layout" content="auth")
+    %r:require( module="css" )
+    %g:javascript(src="lib/bootstrap.js")
+  %body
+    .container
+      %form.form-signin(role="form" action="${postUrl}" method="POST")
+        %h2.firm-signin-heading Вход
+        %input.form-control( name='j_username' placeholder="Email" required="" autofocus="")
+        %input.form-control(type="password" name="j_password" placeholder="Пароль" required="")
+        %label.checkbox
+          %input(type='checkbox' name='${rememberMeParameter}') Запомни меня
+          %button.btn.btn-lg.btn-primary.btn-block(name="submit" type="submit" value="Sign In") Вход

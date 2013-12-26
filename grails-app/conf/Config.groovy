@@ -123,3 +123,18 @@ grails.sitemesh.default.layout = 'main'
         jsOutputPath = "web-app/js/"
     }
 }
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.recruiters.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.recruiters.UserRole'
+grails.plugin.springsecurity.authority.className = 'com.recruiters.Role'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+
