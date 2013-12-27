@@ -3,7 +3,7 @@ package com.recruiters.recruiter
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured(['ROLE_RECRUITER'])
-class DealController {
+class RecruiterDealController {
 
     def index() {
 

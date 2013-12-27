@@ -1,14 +1,13 @@
 package com.recruiters.recruiter
 
-import com.recruiters.recruiter.DealController
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
 /**
  * See the API for {@link grails.test.mixin.web.ControllerUnitTestMixin} for usage instructions
  */
-@TestFor(DealController)
-class DealControllerSpec extends Specification {
+@TestFor(RecruiterDealController)
+class RecruiterDealControllerSpec extends Specification {
 
     def setup() {
     }

@@ -1,24 +1,8 @@
 .container
-  %h1
-    %g:message(code="recruiter.menu.deals")
-  %table.table.table-striped
-    %thead
-      %tr
-        %th
-          %g:message(code="recruiter.dealList.vacancyName")
-        %th
-          %g:message(code="recruiter.dealList.vacancyDescription")
-        %th
-          %g:message(code="recruiter.dealList.dealStatus")
-        %th
-          %g:message(code="recruiter.dealList.vacancyCreatedAt")
-        %th
-    %tbody
-      %tr
-        %td Программист
-        %td PHP guru
-        %td In progress
-        %td 12.10.2013
-        %td
-          %a.btn.btn-link(href="#")
-            %g:message(code="recruiter.dealList.more")
+  %h1 Заявки от рекрутеров
+  %h2 Программист
+  %a.btn.btn-link(href="#") Подано заявок (3)
+  %h2 Лесоруб
+  %a.btn.btn-link(href="#") Подано заявок (2)
+  %h2 Сантехник
+  %a.btn.btn-link(href="#") Подано заявок (0)

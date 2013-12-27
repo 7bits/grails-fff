@@ -12,7 +12,7 @@ class UrlMappings {
             action = 'index'
         }
 
-        name recruiterDeals: "/deals" {
+        name recruiterDeals: "/recruiter/deals" {
             controller = 'deal'
             action = 'index'
         }
@@ -37,8 +37,13 @@ class UrlMappings {
             action = 'index'
         }
 
-        name showDeal: "/deals/$id" {
-            controller = 'deal'
+        name employerDeals: "/employer/deals" {
+            controller = 'employerDeal'
+            action = 'index'
+        }
+
+        name showRecruiterDeal: "/recruiter/deals/$id" {
+            controller = 'recruiterDeal'
             action = 'show'
         }
 

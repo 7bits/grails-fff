@@ -1,0 +1,32 @@
+.container
+  %h1
+    %g:message(code="employer.menu.deals")
+  %table.table.table-striped
+    %thead
+      %tr
+        %th
+          %g:message(code="employer.dealList.vacancyName")
+        %th
+          %g:message(code="employer.dealList.vacancyDescription")
+        %th
+          %g:message(code="employer.dealList.vacancyCreatedAt")
+        %th
+          %g:message(code="employer.dealList.recruiter")
+        %th
+    %tbody
+      %tr
+        %td Программист
+        %td PHP guru
+        %td 12.10.2013
+        %td Вася Пупкин
+        %td
+          %g:link(mapping='showRecruiterDeal' params="[id: '1']" class="btn btn-link")
+            %g:message(code="employer.dealList.more")
+      %tr
+        %td Лесоруб
+        %td Уметь клёво рубить сосны
+        %td 12.12.2013
+        %td Вася Пупкин
+        %td
+          %g:link(mapping='showRecruiterDeal' params="[id: '1']" class="btn btn-link")
+            %g:message(code="employer.dealList.more")
