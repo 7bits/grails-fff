@@ -25,8 +25,14 @@
     </dt>
     <dd>27.12.2014</dd>
   </dl>
-  <input class='form-control js-message-for-bid' name='message' placeholder="${message(code:'recruiter.vacancyShow.conditions')}" type='text' />
-  <a class='btn btn-primary' data-href='#' data-original-title='' data-placement='left' data-toggle='confirmation' title=''>
-    <g:message code='recruiter.vacancyShow.apply'></g:message>
-  </a>
+  <div class='row'>
+    <div class='col-md-6'>
+      <textarea class='form-control js-message-for-bid' name='message' placeholder="${message(code:'recruiter.vacancyShow.conditions')}" rows='4'></textarea>
+    </div>
+  </div>
+  <div class='btn-row'>
+    <a class='btn btn-primary' data-href='#' data-original-title='' data-placement='left' data-toggle='confirmation' title=''>
+      <g:message code='recruiter.vacancyShow.apply'></g:message>
+    </a>
+  </div>
 </div>

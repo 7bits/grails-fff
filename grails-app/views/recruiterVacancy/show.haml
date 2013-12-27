@@ -17,6 +17,9 @@
     %dt
       %g:message(code="recruiter.vacancyShow.expireAt")
     %dd 27.12.2014
-  %input.form-control.js-message-for-bid(name="message" placeholder="${message(code:'recruiter.vacancyShow.conditions')}" type="text")
-  %a.btn.btn-primary(data-href="#" data-original-title="" data-placement="left" data-toggle="confirmation" title="")
-    %g:message(code="recruiter.vacancyShow.apply")
+  .row
+    .col-md-6
+      %textarea.form-control.js-message-for-bid(name="message" placeholder="${message(code:'recruiter.vacancyShow.conditions')}" rows="4")
+  .btn-row
+    %a.btn.btn-primary(data-href="#" data-original-title="" data-placement="left" data-toggle="confirmation" title="")
+      %g:message(code="recruiter.vacancyShow.apply")

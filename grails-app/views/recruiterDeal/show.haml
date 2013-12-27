@@ -26,44 +26,42 @@
       %p Иванов Василий Палыч
   %h2
     %g:message(code="recruiter.dealShow.applicantList.title")
-  .row
-    .col-md-6
-      %table.table.table-striped
-        %thead
-          %tr
-            %th
-              %g:message(code="recruiter.dealShow.applicantList.firstName")
-            %th
-              %g:message(code="recruiter.dealShow.applicantList.lastName")
-            %th
-              %g:message(code="recruiter.dealShow.applicantList.status")
-            %th
-              %g:message(code="recruiter.dealShow.applicantList.createdAt")
-            %th
-              %g:message(code="recruiter.dealShow.applicantList.action")
-        %tbody
-          %tr
-            %td Иван
-            %td Иванов
-            %td In progress
-            %td 09.09.2014
-            %td
-              %a.btn.btn-link.pull-right(href="#")
-                %g:message(code="recruiter.dealShow.applicantList.edit")
-          %tr
-            %td Константин
-            %td Константинопольский
-            %td In progress
-            %td 09.09.2014
-            %td
-          %tr
-            %td Пётр
-            %td Петров
-            %td In progress
-            %td 09.09.2014
-            %td
-              %a.btn.btn-link.pull-right(href="#")
-                %g:message(code="recruiter.dealShow.applicantList.edit")
-      %a.btn.btn-success(href="#")
-        %g:message(code="recruiter.dealShow.applicantList.new")
 
+  %table.table.table-striped
+    %thead
+      %tr
+        %th
+          %g:message(code="recruiter.dealShow.applicantList.firstName")
+        %th
+          %g:message(code="recruiter.dealShow.applicantList.lastName")
+        %th
+          %g:message(code="recruiter.dealShow.applicantList.status")
+        %th
+          %g:message(code="recruiter.dealShow.applicantList.createdAt")
+        %th
+          %g:message(code="recruiter.dealShow.applicantList.action")
+    %tbody
+      %tr
+        %td Иван
+        %td Иванов
+        %td In progress
+        %td 09.09.2014
+        %td
+          %a.btn.btn-link.pull-right(href="#")
+            %g:message(code="recruiter.dealShow.applicantList.edit")
+      %tr
+        %td Константин
+        %td Константинопольский
+        %td In progress
+        %td 09.09.2014
+        %td
+      %tr
+        %td Пётр
+        %td Петров
+        %td In progress
+        %td 09.09.2014
+        %td
+          %a.btn.btn-link.pull-right(href="#")
+            %g:message(code="recruiter.dealShow.applicantList.edit")
+  %a.btn.btn-success(href="#")
+    %g:message(code="recruiter.dealShow.applicantList.new")

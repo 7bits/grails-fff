@@ -39,63 +39,59 @@
   <h2>
     <g:message code='recruiter.dealShow.applicantList.title'></g:message>
   </h2>
-  <div class='row'>
-    <div class='col-md-6'>
-      <table class='table table-striped'>
-        <thead>
-          <tr>
-            <th>
-              <g:message code='recruiter.dealShow.applicantList.firstName'></g:message>
-            </th>
-            <th>
-              <g:message code='recruiter.dealShow.applicantList.lastName'></g:message>
-            </th>
-            <th>
-              <g:message code='recruiter.dealShow.applicantList.status'></g:message>
-            </th>
-            <th>
-              <g:message code='recruiter.dealShow.applicantList.createdAt'></g:message>
-            </th>
-            <th>
-              <g:message code='recruiter.dealShow.applicantList.action'></g:message>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Иван</td>
-            <td>Иванов</td>
-            <td>In progress</td>
-            <td>09.09.2014</td>
-            <td>
-              <a class='btn btn-link pull-right' href='#'>
-                <g:message code='recruiter.dealShow.applicantList.edit'></g:message>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Константин</td>
-            <td>Константинопольский</td>
-            <td>In progress</td>
-            <td>09.09.2014</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Пётр</td>
-            <td>Петров</td>
-            <td>In progress</td>
-            <td>09.09.2014</td>
-            <td>
-              <a class='btn btn-link pull-right' href='#'>
-                <g:message code='recruiter.dealShow.applicantList.edit'></g:message>
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <a class='btn btn-success' href='#'>
-        <g:message code='recruiter.dealShow.applicantList.new'></g:message>
-      </a>
-    </div>
-  </div>
+  <table class='table table-striped'>
+    <thead>
+      <tr>
+        <th>
+          <g:message code='recruiter.dealShow.applicantList.firstName'></g:message>
+        </th>
+        <th>
+          <g:message code='recruiter.dealShow.applicantList.lastName'></g:message>
+        </th>
+        <th>
+          <g:message code='recruiter.dealShow.applicantList.status'></g:message>
+        </th>
+        <th>
+          <g:message code='recruiter.dealShow.applicantList.createdAt'></g:message>
+        </th>
+        <th>
+          <g:message code='recruiter.dealShow.applicantList.action'></g:message>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Иван</td>
+        <td>Иванов</td>
+        <td>In progress</td>
+        <td>09.09.2014</td>
+        <td>
+          <a class='btn btn-link pull-right' href='#'>
+            <g:message code='recruiter.dealShow.applicantList.edit'></g:message>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Константин</td>
+        <td>Константинопольский</td>
+        <td>In progress</td>
+        <td>09.09.2014</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Пётр</td>
+        <td>Петров</td>
+        <td>In progress</td>
+        <td>09.09.2014</td>
+        <td>
+          <a class='btn btn-link pull-right' href='#'>
+            <g:message code='recruiter.dealShow.applicantList.edit'></g:message>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <a class='btn btn-success' href='#'>
+    <g:message code='recruiter.dealShow.applicantList.new'></g:message>
+  </a>
 </div>
