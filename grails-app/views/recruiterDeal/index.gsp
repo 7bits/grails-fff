@@ -28,7 +28,7 @@
         <td>In progress</td>
         <td>12.10.2013</td>
         <td>
-          <g:link class='btn btn-link' mapping='showDeal' params="[id: '1']">
+          <g:link class='btn btn-link' mapping='showRecruiterDeal' params="[id: '1']">
             <g:message code='recruiter.dealList.more'></g:message>
           </g:link>
         </td>
@@ -39,7 +39,7 @@
         <td>In progress</td>
         <td>12.12.2013</td>
         <td>
-          <g:link class='btn btn-link' mapping='showDeal' params="[id: '1']">
+          <g:link class='btn btn-link' mapping='showRecruiterDeal' params="[id: '1']">
             <g:message code='recruiter.dealList.more'></g:message>
           </g:link>
         </td>

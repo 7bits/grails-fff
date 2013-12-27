@@ -13,12 +13,12 @@ class UrlMappings {
         }
 
         name recruiterDeals: "/recruiter/deals" {
-            controller = 'deal'
+            controller = 'recruiterDeal'
             action = 'index'
         }
 
         name recruiterBids: "/bids" {
-            controller = 'bid'
+            controller = 'recruiterBid'
             action = 'index'
         }
 
