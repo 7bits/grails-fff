@@ -10,9 +10,9 @@
   </g:link>
 </li>
 <li>
-  <a href='#'>
+  <g:link mapping='recruiterVacancies'>
     <g:message code='recruiter.menu.vacancySearch'></g:message>
-  </a>
+  </g:link>
 </li>
 <li>
   <g:link mapping='logout'>

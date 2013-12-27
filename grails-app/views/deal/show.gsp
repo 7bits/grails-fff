@@ -1,38 +1,64 @@
 <%-- DO NOT MODIFY THIS FILE, IT IS AUTOMATICALLY GENERATED. INSTEAD MODIFY show.haml --%>
 <div class='container'>
-  <h1>Вакансия, по которой идёт работа</h1>
+  <h1>
+    <g:message code='recruiter.dealShow.headline'></g:message>
+  </h1>
   <div class='row'>
     <div class='col-md-8'>
       <h2></h2>
       <dl class='dl-horizontal'>
-        <dt>Наименование</dt>
+        <dt>
+          <g:message code='recruiter.dealShow.vacancyName'></g:message>
+        </dt>
         <dd>Программист</dd>
-        <dt>Описание</dt>
+        <dt>
+          <g:message code='recruiter.dealShow.vacancyDescription'></g:message>
+        </dt>
         <dd>PHP guru</dd>
-        <dt>Диапазон з/п</dt>
+        <dt>
+          <g:message code='recruiter.dealShow.vacancySalary'></g:message>
+        </dt>
         <dd>10 - 20</dd>
-        <dt>Дата создания</dt>
+        <dt>
+          <g:message code='recruiter.dealShow.vacancyCreatedAt'></g:message>
+        </dt>
         <dd>10.12.2013</dd>
-        <dt>Дата окончания</dt>
+        <dt>
+          <g:message code='recruiter.dealShow.vacancyExpireAt'></g:message>
+        </dt>
         <dd>09.09.2014</dd>
       </dl>
     </div>
     <div class='col-md-4'>
-      <h2>Работодатель</h2>
+      <h2>
+        <g:message code='recruiter.dealShow.employer'></g:message>
+      </h2>
       <p>Иванов Василий Палыч</p>
     </div>
   </div>
-  <h2>Список кандидатов</h2>
+  <h2>
+    <g:message code='recruiter.dealShow.applicantList.title'></g:message>
+  </h2>
   <div class='row'>
     <div class='col-md-6'>
       <table class='table table-striped'>
         <thead>
           <tr>
-            <th>Имя</th>
-            <th>Фамилия</th>
-            <th>Статус</th>
-            <th>Дата создания</th>
-            <th>Действие</th>
+            <th>
+              <g:message code='recruiter.dealShow.applicantList.firstName'></g:message>
+            </th>
+            <th>
+              <g:message code='recruiter.dealShow.applicantList.lastName'></g:message>
+            </th>
+            <th>
+              <g:message code='recruiter.dealShow.applicantList.status'></g:message>
+            </th>
+            <th>
+              <g:message code='recruiter.dealShow.applicantList.createdAt'></g:message>
+            </th>
+            <th>
+              <g:message code='recruiter.dealShow.applicantList.action'></g:message>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -42,7 +68,9 @@
             <td>In progress</td>
             <td>09.09.2014</td>
             <td>
-              <a class='btn btn-link pull-right' href='#'>Изменить</a>
+              <a class='btn btn-link pull-right' href='#'>
+                <g:message code='recruiter.dealShow.applicantList.edit'></g:message>
+              </a>
             </td>
           </tr>
           <tr>
@@ -58,12 +86,16 @@
             <td>In progress</td>
             <td>09.09.2014</td>
             <td>
-              <a class='btn btn-link pull-right' href='#'>Изменить</a>
+              <a class='btn btn-link pull-right' href='#'>
+                <g:message code='recruiter.dealShow.applicantList.edit'></g:message>
+              </a>
             </td>
           </tr>
         </tbody>
       </table>
-      <a class='btn btn-success' href='#'>Предложить нового кандидата</a>
+      <a class='btn btn-success' href='#'>
+        <g:message code='recruiter.dealShow.applicantList.new'></g:message>
+      </a>
     </div>
   </div>
 </div>

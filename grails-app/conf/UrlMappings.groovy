@@ -22,8 +22,18 @@ class UrlMappings {
             action = 'index'
         }
 
-        name employerVacancies: "/vacancies" {
-            controller = 'vacancy'
+        name recruiterVacancies: "/vacancies" {
+            controller = 'recruiterVacancy'
+            action = 'index'
+        }
+
+        name showRecruiterVacancies: "/vacancies/$id" {
+            controller = 'recruiterVacancy'
+            action = 'show'
+        }
+
+        name employerVacancies: "/my-vacancies" {
+            controller = 'employerVacancy'
             action = 'index'
         }
 

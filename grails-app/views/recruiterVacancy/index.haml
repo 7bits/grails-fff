@@ -1,0 +1,21 @@
+.container
+  %h1
+    %g:message(code="recruiter.menu.vacancySearch")
+  %table.table.table-striped
+    %thead
+      %tr
+        %th
+          %g:message(code="recruiter.vacancyList.name")
+        %th
+          %g:message(code="recruiter.vacancyList.description")
+        %th
+          %g:message(code="recruiter.vacancyList.createdAt")
+        %th
+    %tbody
+      %tr
+        %td Программист
+        %td PHP guru
+        %td 12.10.2013
+        %td
+          %g:link(mapping="showRecruiterVacancies" params="[id: '1']" class="btn btn-link")
+            %g:message(code="recruiter.vacancyList.more")

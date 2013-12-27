@@ -1,33 +1,46 @@
 .container
-  %h1 Вакансия, по которой идёт работа
+  %h1
+    %g:message(code="recruiter.dealShow.headline")
   .row
     .col-md-8
       %h2
       %dl.dl-horizontal
-        %dt Наименование
+        %dt
+          %g:message(code="recruiter.dealShow.vacancyName")
         %dd Программист
-        %dt Описание
+        %dt
+          %g:message(code="recruiter.dealShow.vacancyDescription")
         %dd PHP guru
-        %dt Диапазон з/п
+        %dt
+          %g:message(code="recruiter.dealShow.vacancySalary")
         %dd 10 - 20
-        %dt Дата создания
+        %dt
+          %g:message(code="recruiter.dealShow.vacancyCreatedAt")
         %dd 10.12.2013
-        %dt Дата окончания
+        %dt
+          %g:message(code="recruiter.dealShow.vacancyExpireAt")
         %dd 09.09.2014
     .col-md-4
-      %h2 Работодатель
+      %h2
+        %g:message(code="recruiter.dealShow.employer")
       %p Иванов Василий Палыч
-  %h2 Список кандидатов
+  %h2
+    %g:message(code="recruiter.dealShow.applicantList.title")
   .row
     .col-md-6
       %table.table.table-striped
         %thead
           %tr
-            %th Имя
-            %th Фамилия
-            %th Статус
-            %th Дата создания
-            %th Действие
+            %th
+              %g:message(code="recruiter.dealShow.applicantList.firstName")
+            %th
+              %g:message(code="recruiter.dealShow.applicantList.lastName")
+            %th
+              %g:message(code="recruiter.dealShow.applicantList.status")
+            %th
+              %g:message(code="recruiter.dealShow.applicantList.createdAt")
+            %th
+              %g:message(code="recruiter.dealShow.applicantList.action")
         %tbody
           %tr
             %td Иван
@@ -35,7 +48,8 @@
             %td In progress
             %td 09.09.2014
             %td
-              %a.btn.btn-link.pull-right(href="#") Изменить
+              %a.btn.btn-link.pull-right(href="#")
+                %g:message(code="recruiter.dealShow.applicantList.edit")
           %tr
             %td Константин
             %td Константинопольский
@@ -48,5 +62,8 @@
             %td In progress
             %td 09.09.2014
             %td
-              %a.btn.btn-link.pull-right(href="#") Изменить
-      %a.btn.btn-success(href="#") Предложить нового кандидата
+              %a.btn.btn-link.pull-right(href="#")
+                %g:message(code="recruiter.dealShow.applicantList.edit")
+      %a.btn.btn-success(href="#")
+        %g:message(code="recruiter.dealShow.applicantList.new")
+
