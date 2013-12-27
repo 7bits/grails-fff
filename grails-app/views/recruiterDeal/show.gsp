@@ -91,7 +91,7 @@
       </tr>
     </tbody>
   </table>
-  <a class='btn btn-success' href='#'>
+  <g:link class='btn btn-success' mapping='recruiterNewApplicant'>
     <g:message code='recruiter.dealShow.applicantList.new'></g:message>
-  </a>
+  </g:link>
 </div>

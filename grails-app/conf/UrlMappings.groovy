@@ -37,6 +37,11 @@ class UrlMappings {
             action = 'show'
         }
 
+        name recruiterNewApplicant: "/applicants/new" {
+            controller = 'recruiterApplicant'
+            action = 'create'
+        }
+
         name employerVacancies: "/my-vacancies" {
             controller = 'employerVacancy'
             action = 'index'
