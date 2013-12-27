@@ -1,15 +1,22 @@
 .container
-  %h1 Просмотр вакансии
+  %h1
+    %g:message(code="recruiter.vacancyShow.headline")
   %dl.dl-horizontal
-    %dt Наименование
+    %dt
+      %g:message(code="recruiter.vacancyShow.name")
     %dd Лесоруб
-    %dt Описание
+    %dt
+      %g:message(code="recruiter.vacancyShow.description")
     %dd Уметь клёво рубить сосны
-    %dt Диапазон з/п
+    %dt
+      %g:message(code="recruiter.vacancyShow.salary")
     %dd 15-20
-    %dt Дата создания
+    %dt
+      %g:message(code="recruiter.vacancyShow.createdAt")
     %dd 27.12.2013
-    %dt Дата окончания
+    %dt
+      %g:message(code="recruiter.vacancyShow.expireAt")
     %dd 27.12.2014
-  %input.form-control.js-message-for-bid(name="message" placeholder="текст" type="text")
-  %a.btn.btn-primary(data-href="#" data-original-title="" data-placement="left" data-toggle="confirmation" title="") Предложить свои услуги
+  %input.form-control.js-message-for-bid(name="message" placeholder="${message(code:'recruiter.vacancyShow.conditions')}" type="text")
+  %a.btn.btn-primary(data-href="#" data-original-title="" data-placement="left" data-toggle="confirmation" title="")
+    %g:message(code="recruiter.vacancyShow.apply")

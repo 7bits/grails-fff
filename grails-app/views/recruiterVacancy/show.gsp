@@ -1,18 +1,32 @@
 <%-- DO NOT MODIFY THIS FILE, IT IS AUTOMATICALLY GENERATED. INSTEAD MODIFY show.haml --%>
 <div class='container'>
-  <h1>Просмотр вакансии</h1>
+  <h1>
+    <g:message code='recruiter.vacancyShow.headline'></g:message>
+  </h1>
   <dl class='dl-horizontal'>
-    <dt>Наименование</dt>
+    <dt>
+      <g:message code='recruiter.vacancyShow.name'></g:message>
+    </dt>
     <dd>Лесоруб</dd>
-    <dt>Описание</dt>
+    <dt>
+      <g:message code='recruiter.vacancyShow.description'></g:message>
+    </dt>
     <dd>Уметь клёво рубить сосны</dd>
-    <dt>Диапазон з/п</dt>
-    <dd></dd>
-    <dt>Дата создания</dt>
-    <dd>Fri Dec 27 11:13:45 OMST 2013</dd>
-    <dt>Дата окончания</dt>
-    <dd></dd>
+    <dt>
+      <g:message code='recruiter.vacancyShow.salary'></g:message>
+    </dt>
+    <dd>15-20</dd>
+    <dt>
+      <g:message code='recruiter.vacancyShow.createdAt'></g:message>
+    </dt>
+    <dd>27.12.2013</dd>
+    <dt>
+      <g:message code='recruiter.vacancyShow.expireAt'></g:message>
+    </dt>
+    <dd>27.12.2014</dd>
   </dl>
-  <input class='form-control js-message-for-bid' name='message' placeholder='&#1090;&#1077;&#1082;&#1089;&#1090;' type='text' />
-  <a class='btn btn-primary' data-href='#' data-original-title='' data-placement='left' data-toggle='confirmation' title=''>Предложить свои услуги</a>
+  <input class='form-control js-message-for-bid' name='message' placeholder="${message(code:'recruiter.vacancyShow.conditions')}" type='text' />
+  <a class='btn btn-primary' data-href='#' data-original-title='' data-placement='left' data-toggle='confirmation' title=''>
+    <g:message code='recruiter.vacancyShow.apply'></g:message>
+  </a>
 </div>
