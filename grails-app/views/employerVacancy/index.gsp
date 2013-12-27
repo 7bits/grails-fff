@@ -2,9 +2,15 @@
 <div class='container'>
   <h1>Заявки от рекрутеров</h1>
   <h2>Программист</h2>
-  <a class='btn btn-link' href='#'>Подано заявок (3)</a>
+  <g:link class='btn btn-link' mapping='employerVacancyBids' params="[id: '1']">
+    Подано заявок (3)
+  </g:link>
   <h2>Лесоруб</h2>
-  <a class='btn btn-link' href='#'>Подано заявок (2)</a>
+  <g:link class='btn btn-link' mapping='employerVacancyBids' params="[id: '1']">
+    Подано заявок (2)
+  </g:link>
   <h2>Сантехник</h2>
-  <a class='btn btn-link' href='#'>Подано заявок (0)</a>
+  <g:link class='btn btn-link' mapping='employerVacancyBids' params="[id: '1']">
+    Подано заявок (0)
+  </g:link>
 </div>
