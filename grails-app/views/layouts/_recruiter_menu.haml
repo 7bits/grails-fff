@@ -1,12 +1,18 @@
-%li
-  %g:link(mapping='recruiterDeals')
-    %g:message(code="recruiter.menu.deals")
-%li
-  %g:link(mapping='recruiterBids')
-    %g:message(code="recruiter.menu.bids")
-%li
-  %g:link(mapping='recruiterVacancies')
-    %g:message(code="recruiter.menu.vacancySearch")
-%li
-  %g:link(mapping='logout')
-    %g:message(code="recruiter.menu.logout")
+%li#fat-menu.dropdown
+  %a#menu.dropdown-toggle(data-toggle="dropdown" href="#" role="button")
+    %span.glyphicon.glyphicon-star
+    %b.caret
+  %ul.dropdown-menu(aria-labelledby="menu" role="menu")
+    %li(role="presentation")
+      %g:link(mapping='recruiterDeals' role="menuitem" tabindex="-1")
+        %g:message(code="recruiter.menu.deals")
+    %li(role="presentation")
+      %g:link(mapping='recruiterBids' role="menuitem" tabindex="-1")
+        %g:message(code="recruiter.menu.bids")
+    %li(role="presentation")
+      %g:link(mapping='recruiterVacancies' role="menuitem" tabindex="-1")
+        %g:message(code="recruiter.menu.vacancySearch")
+    %li.divider(role="presentation")
+    %li(role="presentation")
+      %g:link(mapping='logout' role="menuitem" tabindex="-1")
+        %g:message(code="recruiter.menu.logout")

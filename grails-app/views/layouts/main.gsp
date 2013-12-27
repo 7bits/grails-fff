@@ -15,7 +15,7 @@
     <r:layoutResources />
   </head>
   <body>
-    <div class='navbar navbar-inverse' role='navigation'>
+    <div class='navbar navbar-default' role='navigation'>
       <div class='container'>
         <div class='navbar-header'>
           <a class='navbar-brand' href='#'>Имя проекта</a>

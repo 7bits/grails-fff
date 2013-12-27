@@ -1,9 +1,15 @@
-%li
-  %g:link(mapping='employerVacancies')
-    %g:message(code="employer.menu.vacancies")
-%li
-  %g:link(mapping='employerDeals')
-    %g:message(code="employer.menu.deals")
-%li
-  %g:link(mapping='logout')
-    %g:message(code="employer.menu.logout")
+%li#fat-menu.dropdown
+  %a#menu.dropdown-toggle(data-toggle="dropdown" href="#" role="button")
+    %span.glyphicon.glyphicon-star
+    %b.caret
+  %ul.dropdown-menu(aria-labelledby="menu" role="menu")
+    %li(role="presentation")
+      %g:link(mapping='employerVacancies' role="menuitem" tabindex="-1")
+        %g:message(code="employer.menu.vacancies")
+    %li(role="presentation")
+      %g:link(mapping='employerDeals' role="menuitem" tabindex="-1")
+        %g:message(code="employer.menu.deals")
+    %li.divider(role="presentation")
+    %li(role="presentation")
+      %g:link(mapping='logout' role="menuitem" tabindex="-1")
+        %g:message(code="employer.menu.logout")

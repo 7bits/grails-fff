@@ -1,2 +1,5 @@
 /* line 2, ../../src/stylesheets/advanced-lists.scss */
 .list-group-item .btn-link { line-height: 2px; }
+
+/* line 7, ../../src/stylesheets/advanced-lists.scss */
+.dl-horizontal { margin-bottom: 50px; }
