@@ -22,26 +22,12 @@
         </div>
         <div class='navbar-collapse collapse'>
           <ul class='nav navbar-nav navbar-right'>
-            <li>
-              <g:link mapping='recruiterDeals'>
-                <g:message code='recruiter.menu.deals'></g:message>
-              </g:link>
-            </li>
-            <li>
-              <g:link mapping='recruiterBids'>
-                <g:message code='recruiter.menu.bids'></g:message>
-              </g:link>
-            </li>
-            <li>
-              <a href='#'>
-                <g:message code='recruiter.menu.vacancySearch'></g:message>
-              </a>
-            </li>
-            <li>
-              <g:link mapping='logout'>
-                <g:message code='recruiter.menu.logout'></g:message>
-              </g:link>
-            </li>
+            <sec:ifAllGranted roles='ROLE_RECRUITER'>
+              <g:render template='/layouts/recruiter_menu'></g:render>
+            </sec:ifAllGranted>
+            <sec:ifAllGranted roles='ROLE_EMPLOYER'>
+              <g:render template='/layouts/employer_menu'></g:render>
+            </sec:ifAllGranted>
           </ul>
         </div>
       </div>
