@@ -28,9 +28,9 @@
               </g:link>
             </li>
             <li>
-              <a href='#'>
+              <g:link mapping='recruiterBids'>
                 <g:message code='recruiter.menu.bids'></g:message>
-              </a>
+              </g:link>
             </li>
             <li>
               <a href='#'>

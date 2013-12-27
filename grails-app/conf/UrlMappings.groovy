@@ -17,6 +17,11 @@ class UrlMappings {
             action = 'index'
         }
 
+        name recruiterBids: "/bids" {
+            controller = 'bid'
+            action = 'index'
+        }
+
         name employerVacancies: "/vacancies" {
             controller = 'vacancy'
             action = 'index'

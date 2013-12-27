@@ -1,0 +1,32 @@
+.container
+  %h1
+    %g:message(code="recruiter.menu.bids")
+  %table.table.table-striped
+    %thead
+      %tr
+        %th
+          %g:message(code="recruiter.bidList.vacancyName")
+        %th
+          %g:message(code="recruiter.bidList.vacancyDescription")
+        %th
+          %g:message(code="recruiter.bidList.dealStatus")
+        %th
+          %g:message(code="recruiter.bidList.vacancyCreatedAt")
+        %th
+    %tbody
+      %tr
+        %td Программист
+        %td PHP guru
+        %td Active
+        %td 12.10.2013
+        %td
+          %a.btn.btn-link(href="#")
+            %g:message(code="recruiter.bidList.more")
+        %tr
+          %td Сантехник
+          %td Не пить!
+          %td Active
+          %td 27.12.2013
+          %td
+            %a.btn.btn-link(href="#")
+              %g:message(code="recruiter.bidList.more")
