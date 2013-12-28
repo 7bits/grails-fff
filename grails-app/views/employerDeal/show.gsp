@@ -50,21 +50,21 @@
       <ul class='list-group'>
         <li class='list-group-item'>
           Иван Иванов
-          <a class='btn btn-link pull-right' href='#'>
+          <g:link class='btn btn-link pull-right' mapping='employerShowApplicant' params="[id: '1']">
             <g:message code='employer.dealShow.applicantList.more'></g:message>
-          </a>
+          </g:link>
         </li>
         <li class='list-group-item'>
           Пётр Петров
-          <a class='btn btn-link pull-right' href='#'>
+          <g:link class='btn btn-link pull-right' mapping='employerShowApplicant' params="[id: '1']">
             <g:message code='employer.dealShow.applicantList.more'></g:message>
-          </a>
+          </g:link>
         </li>
         <li class='list-group-item'>
           Константин Константинопольский
-          <a class='btn btn-link pull-right' href='#'>
+          <g:link class='btn btn-link pull-right' mapping='employerShowApplicant' params="[id: '1']">
             <g:message code='employer.dealShow.applicantList.more'></g:message>
-          </a>
+          </g:link>
         </li>
       </ul>
     </div>
