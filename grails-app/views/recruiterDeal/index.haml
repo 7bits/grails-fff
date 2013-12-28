@@ -14,6 +14,15 @@
           %g:message(code="recruiter.dealList.vacancyCreatedAt")
         %th
     %tbody
+      %g:each(in="${deals}")
+        %tr
+          %td ${it.vacancy.title}
+          %td ${it.vacancy.description}
+          %td In progress
+          %td ${it.vacancy.createdAt}
+          %td
+            %g:link(mapping='showRecruiterDeal' params='[id: "${it.id}"]' class="btn btn-link")
+              %g:message(code="recruiter.dealList.more")
       %tr
         %td Программист
         %td PHP guru

@@ -6,6 +6,6 @@ import grails.transaction.Transactional
 class RecruiterService {
 
     def findRecruiterDeals() {
-
+        Deal.findAll()
     }
 }
