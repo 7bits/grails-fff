@@ -28,7 +28,7 @@
         <td>12.10.2013</td>
         <td>Вася Пупкин</td>
         <td>
-          <g:link class='btn btn-link' mapping='showRecruiterDeal' params="[id: '1']">
+          <g:link class='btn btn-link' mapping='employerShowDeal' params="[id: '1']">
             <g:message code='employer.dealList.more'></g:message>
           </g:link>
         </td>
@@ -39,7 +39,7 @@
         <td>12.12.2013</td>
         <td>Вася Пупкин</td>
         <td>
-          <g:link class='btn btn-link' mapping='showRecruiterDeal' params="[id: '1']">
+          <g:link class='btn btn-link' mapping='employerShowDeal' params="[id: '1']">
             <g:message code='employer.dealList.more'></g:message>
           </g:link>
         </td>

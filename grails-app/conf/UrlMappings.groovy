@@ -62,6 +62,11 @@ class UrlMappings {
             action = 'show'
         }
 
+        name employerShowDeal: "/employer/deals/$id" {
+            controller = 'employerDeal'
+            action = 'show'
+        }
+
         "/$controller/$action?/$id?(.${format})?"{
             constraints {
                 // apply constraints here
