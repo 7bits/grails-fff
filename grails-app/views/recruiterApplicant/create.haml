@@ -1,26 +1,26 @@
 .container
-  %h2 Создание кандидата
+  %h2
+    %g:message(code="recruiter.applicantNew.headline")
   %form(action="" enctype="multipartform-data" method="post" name="applicantForm")
     .row
       .col-md-6
         .form-group
           %label(for="firstName")
-          %input#firstName.form-control(name="firstName" placeholder="Имя" type="text")
+          %input#firstName.form-control(name="firstName" placeholder="${message(code:'recruiter.applicantNew.firstName')}" type="text")
         .form-group
           %label(for="lastName")
-          %input#lastName.form-control(name="lastName" placeholder="Фамилия" type="text")
+          %input#lastName.form-control(name="lastName" placeholder="${message(code:'recruiter.applicantNew.lastName')}" type="text")
         .form-group
           %label(for="description")
-          %textarea#description.form-control(name="description" placeholder="Описание")
+          %textarea#description.form-control(name="description" placeholder="${message(code:'recruiter.applicantNew.description')}")
         .form-group
           %label(for="resumeFile") Прикрепить резюме
-          %input#resumeFile(name="resumeFile" placeholder="Прикрепить резюме" type="file")
+          %input#resumeFile(name="resumeFile" placeholder="${message(code:'recruiter.applicantNew.resume')}" type="file")
         .form-group
           %label(for="testAnswerFile") Ответы на тест
-          %input#testAnswerFile(name="testAnswerFile" placeholder="Ответы на тест" type="file")
+          %input#testAnswerFile(name="testAnswerFile" placeholder="${message(code:'recruiter.applicantNew.answers')}" type="file")
         .form-group
           %input#dealId(name="dealId" type="hidden" value="1")
           %input#id(name="id" type="hidden" value="0")
-        %input.btn.btn-success(name="submit" type="submit" value="Добавить")
+        %input.btn.btn-success(name="submit" type="submit" value="${message(code:'recruiter.applicantNew.add')}")
         %a.btn.btn-link(href="#")
-        %a(href="#") К описанию вакансии
