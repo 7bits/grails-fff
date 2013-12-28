@@ -1,15 +1,19 @@
 .container
   .row
     .col-md-8
-      %h2 Информация о рекрутёре
+      %h2
+        %g:message(code="employer.recruiterShow.info")
       %p Вася Пупкин
       %p Условия такие условия, такие интересные условия
     .col-md-4
-      %h2 Вакансия:
+      %h2
+        %g:message(code="employer.recruiterShow.vacancy")
       %p Программист
       %p PHP guru
       %p
   .row
     .col-md-6
-      .a.btn.btn-success(data-href="#" data-original-title="" data-placement="left" data-toggle="confirmation" title="") Нанять
-      .a.btn.btn-danger(data-href="#" data-original-title="" data-placement="left" data-toggle="confirmation" title="") Отклонить
+      .a.btn.btn-success(data-href="#" data-original-title="" data-placement="left" data-toggle="confirmation" title="")
+        %g:message(code="employer.recruiterShow.hire")
+      .a.btn.btn-danger(data-href="#" data-original-title="" data-placement="left" data-toggle="confirmation" title="")
+        %g:message(code="employer.recruiterShow.decline")

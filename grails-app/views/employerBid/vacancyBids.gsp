@@ -28,7 +28,9 @@
       </ul>
     </div>
     <div class='col-md-4'>
-      <h2>Вакансия</h2>
+      <h2>
+        <g:message code='employer.vacancyBidList.vacancy'></g:message>
+      </h2>
       <p>Программист</p>
       <p>PHP guru</p>
       <p></p>
