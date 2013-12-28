@@ -1,11 +1,13 @@
 .container
-  %h1 Заявки от рекрутеров
-  %h2 Программист
-  %g:link(mapping='employerVacancyBids' params="[id: '1']" class="btn btn-link")
-    Подано заявок (3)
-  %h2 Лесоруб
-  %g:link(mapping='employerVacancyBids' params="[id: '1']" class="btn btn-link")
-    Подано заявок (2)
-  %h2 Сантехник
-  %g:link(mapping='employerVacancyBids' params="[id: '1']" class="btn btn-link")
-    Подано заявок (0)
+  %h1
+    %g:message(code="employer.myVacancies.headline")
+  %ol
+    %li
+      %g:link(mapping='employerVacancyBids' params="[id: '1']" class="btn btn-link.black")
+        Программист  (3)
+    %li
+      %g:link(mapping='employerVacancyBids' params="[id: '1']" class="btn btn-link.black")
+        Лесоруб  (2)
+    %li
+      %g:link(mapping='employerVacancyBids' params="[id: '1']" class="btn btn-link.black")
+        Сантехник  (0)

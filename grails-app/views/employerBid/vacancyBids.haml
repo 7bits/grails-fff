@@ -3,31 +3,22 @@
     %g:message(code="employer.vacancyBidList.headline")
   .row
     .col-md-8
-      %table.table.table-striped
-        %thead
-          %tr
-            %th
-              %g:message(code="employer.vacancyBidList.recruiter")
-            %th
-        %tbody
-          %tr
-            %td Вася Пупкин
-            %td
-              %g:link(mapping='employerShowRecruiter' params="[id: '1']" class="btn btn-link")
-                %g:message(code="employer.vacancyBidList.more")
-          %tr
-            %td Вася Пупкин
-            %td
-              %g:link(mapping='employerShowRecruiter' params="[id: '1']" class="btn btn-link")
-                %g:message(code="employer.vacancyBidList.more")
-          %tr
-            %td Вася Пупкин
-            %td
-              %g:link(mapping='employerShowRecruiter' params="[id: '1']" class="btn btn-link")
-                %g:message(code="employer.vacancyBidList.more")
-    .col-md-4
       %h2
-        %g:message(code="employer.vacancyBidList.vacancy")
+      %ul.list-group
+        %li.list-group-item
+          Вася Пупкин
+          %g:link(mapping='employerShowRecruiter' params="[id: '1']" class="btn btn-link pull-right")
+            %g:message(code="employer.vacancyBidList.more")
+        %li.list-group-item
+          Вася Пупкин
+          %g:link(mapping='employerShowRecruiter' params="[id: '1']" class="btn btn-link pull-right")
+            %g:message(code="employer.vacancyBidList.more")
+        %li.list-group-item
+          Вася Пупкин
+          %g:link(mapping='employerShowRecruiter' params="[id: '1']" class="btn btn-link pull-right")
+            %g:message(code="employer.vacancyBidList.more")
+    .col-md-4
+      %h2 Вакансия
       %p Программист
       %p PHP guru
       %p
