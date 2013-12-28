@@ -6,7 +6,7 @@ import grails.plugin.springsecurity.annotation.Secured
 class RecruiterDealController {
 
     def index() {
-
+        DealService.fetchDealsByRecruiter
     }
 
     def show() {
