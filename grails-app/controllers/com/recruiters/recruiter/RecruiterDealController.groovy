@@ -6,10 +6,12 @@ import grails.plugin.springsecurity.annotation.Secured
 @Secured(['ROLE_RECRUITER'])
 class RecruiterDealController {
 
-    RecruiterService recruiterService
+    def recruiterService
+    def springSecurityService
 
     def index() {
-        [deals: recruiterService.findRecruiterDeals()]
+        def user = springSecurityService.currentUser
+        [deals: recruiterService.findRecruiterDeals(user)]
     }
 
     def show() {
