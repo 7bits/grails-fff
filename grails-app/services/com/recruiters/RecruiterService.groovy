@@ -5,8 +5,7 @@ import grails.transaction.Transactional
 @Transactional
 class RecruiterService {
 
-    def findRecruiterDeals(User user) {
-        def recruiter = Recruiter.findByUser(user)
+    def findRecruiterDeals(Recruiter recruiter) {
         Deal.findByRecruiter(recruiter)
     }
 }
