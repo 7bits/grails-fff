@@ -4,4 +4,7 @@ beans = {
         baseResource = "file:."
         pluginSettings = new grails.util.PluginBuildSettings(grails.util.BuildSettingsHolder.settings)
     }
+
+    recruiterRepository(com.recruiters.repository.RecruiterRepository) {
+    }
 }

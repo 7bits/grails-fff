@@ -1,18 +1,19 @@
-package com.recruiters
+package com.recruiters.repository
 
-import grails.transaction.Transactional
+import com.recruiters.Deal
+import com.recruiters.Recruiter
+import com.recruiters.User
 import groovy.sql.Sql
 
-@Transactional
-class RecruiterService {
+class RecruiterRepository {
 
     def dataSource
 
     def findRecruiterByUserId(userId) {
         def sqlQuery = """
-            select u.username as username
+            select u.username as username,
             from
-                user u inner join recruiter r on r.user_id = u.id
+                users u inner join recruiter r on r.user_id = u.id
             where
                 u.id = ?
             limit 1
@@ -28,12 +29,7 @@ class RecruiterService {
         r
     }
 
-    def findRecruiterByUser(User user) {
-        Recruiter.findByUser(user)
-    }
-
-
-    def findRecruiterDeals(Recruiter recruiter) {
+    def findRecruiterDeals(recruiterId) {
         Deal.findByRecruiter(recruiter)
     }
 }
