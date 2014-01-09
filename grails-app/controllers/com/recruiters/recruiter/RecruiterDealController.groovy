@@ -12,7 +12,7 @@ class RecruiterDealController {
 
     def index() {
         def user = springSecurityService.currentUser
-        def recruiter = Recruiter.findByUser(user)
+        def recruiter = recruiterService.findRecruiterByUser(user)
         [deals: recruiterService.findRecruiterDeals(recruiter)]
     }
 
