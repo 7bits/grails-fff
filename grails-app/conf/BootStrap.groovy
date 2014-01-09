@@ -50,6 +50,7 @@ class BootStrap {
                 createdAt: today,
                 expireAt: today.next()
         )
+
         inProgressVacancy.save(flush: true)
         def deal = new Deal(vacancy: inProgressVacancy, recruiter: recruiter)
         deal.save(flush: true)
