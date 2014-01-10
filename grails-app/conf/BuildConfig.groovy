@@ -49,7 +49,9 @@ grails.project.dependency.resolution = {
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-        // runtime 'mysql:mysql-connector-java:5.1.24'
+        runtime 'mysql:mysql-connector-java:5.1.24'
+        compile 'org.mybatis:mybatis:3.2.3'
+        compile 'org.mybatis:mybatis-spring:1.2.1'
     }
 
     plugins {
